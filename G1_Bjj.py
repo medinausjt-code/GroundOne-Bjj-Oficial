@@ -457,7 +457,7 @@ def main(page: ft.Page):
                 ft.Stack(
                     controls=[
                         ft.Image(
-                            src="/fundo.jpeg", fit="cover", expand=True, opacity=0.15,
+                            src="fundo.jpeg", fit="cover", expand=True, opacity=0.15,
                             width=page.window_width if hasattr(page, "window_width") else None,
                             height=page.window_height if hasattr(page, "window_height") else None
                         ),
@@ -889,7 +889,7 @@ def main(page: ft.Page):
             ft.Stack(
                 controls=[
                     ft.Image(
-                        src="/fundo.jpeg",
+                        src="fundo.jpeg",
                         fit="cover",
                         expand=True,
                         opacity=0.15,
@@ -979,7 +979,7 @@ def main(page: ft.Page):
             ft.Stack(
                 controls=[
                     ft.Image(
-                        src="/fundo.jpeg", fit="cover", expand=True, opacity=0.15,
+                        src="fundo.jpeg", fit="cover", expand=True, opacity=0.15,
                         width=page.window_width if hasattr(page, "window_width") else None,
                         height=page.window_height if hasattr(page, "window_height") else None
                     ),
@@ -1028,7 +1028,7 @@ def main(page: ft.Page):
             ft.Stack(
                 controls=[
                     ft.Image(
-                        src="/fundo.jpeg",
+                        src="fundo.jpeg",
                         fit="cover",
                         expand=True,
                         opacity=0.35,
@@ -1044,24 +1044,5 @@ def main(page: ft.Page):
 
     carregar_tela_autenticacao()
 
-
 import flet_fastapi
-app = flet_fastapi.app(main, assets_dir="assets")
-
-
-
-
-
-
-# =============================================================================
-# APIs, URLs e IDs
-# =============================================================================
-
-#        url_formulario = "https://docs.google.com/forms/d/11CUoNGpviG5ebyGSIR5c60Au-nZdmp150UQbDUZKUxE/formResponse"
-
-#            url_oficial = f"https://viacep.com.br/ws/{cep_limpo}/json/"
-
-
-# CHAVE_API_GOOGLE = "AIzaSyDp5zXQ4uP6VWo83XiLNePpz4vUuEiOzxU"
-# ID_DA_PLANILHA = "1MDlkENxlslErQ6DwxtDQ-6ufHxIJtCZ5G1eUVTXiTGc"
-
+app = flet_fastapi.app(main)
