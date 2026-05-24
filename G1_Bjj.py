@@ -24,8 +24,6 @@ import flet as ft
 import gspread
 import httpx
 
-app = flet_fastapi.app(main)
-
 CHAVE_API_GOOGLE = "AIzaSyDp5zXQ4uP6VWo83XiLNePpz4vUuEiOzxU"
 ID_DA_PLANILHA = "1MDlkENxlslErQ6DwxtDQ-6ufHxIJtCZ5G1eUVTXiTGc"
 url_formulario = "https://docs.google.com/forms/d/11CUoNGpviG5ebyGSIR5c60Au-nZdmp150UQbDUZKUxE/formResponse"
@@ -1047,3 +1045,8 @@ def main(page: ft.Page):
     carregar_tela_autenticacao()
 
 import flet_fastapi
+
+
+# Garante que a variável global de inicialização seja lida após o carregamento de todas as funções
+import flet_fastapi
+app = flet_fastapi.app(main)
