@@ -1046,12 +1046,6 @@ def main(page: ft.Page):
 
 
 import flet_fastapi
-
-# Deixa a aplicação pronta para o servidor web reativo da Vercel
-app = flet_fastapi.app(main, assets_dir="assets")
-import flet_fastapi
-
-# Deixa a aplicação pronta para o servidor web reativo da Vercel
 app = flet_fastapi.app(main, assets_dir="assets")
 
 
