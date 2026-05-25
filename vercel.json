@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "G1_Bjj.py",
+      "src": "index.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "G1_Bjj.py"
+      "dest": "index.py"
     }
   ]
 }
