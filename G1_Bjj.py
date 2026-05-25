@@ -1047,6 +1047,5 @@ def main(page: ft.Page):
 import flet_fastapi
 
 
-# Garante que a variável global de inicialização seja lida após o carregamento de todas as funções
 import flet_fastapi
 app = flet_fastapi.app(main)
