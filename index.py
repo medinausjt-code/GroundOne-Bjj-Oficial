@@ -1,2 +1,2 @@
 import G1_Bjj
-app = G1_Bjj.app
+app = g1_bjj.app
